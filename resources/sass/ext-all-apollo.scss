@@ -1,0 +1,210 @@
+// Unless you want to include all components, you must set $include-default to false
+// IF you set this to true, you can also remove lines 10 to 38 of this file
+$include-default: false;
+
+// Insert your custom variables here.
+// $base-color: #aa0000;
+
+$theme-name: 'apollo';
+
+$body: #D3D5D4;
+body {
+    background: url('../images/Apollo/shared/bg.png') repeat #36373E;
+}
+$font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+$color1: #131417;
+$color2: #2F3137;
+
+$include-missing-images: true;
+$base-color: #efefef;
+
+//panel
+$panel-border-radius: null;
+$panel-border-width: 1px;
+$panel-header-color: white;
+$panel-header-background-color: $color1;
+$panel-border-color: black;
+$panel-body-border-color: #999;
+$panel-header-background-gradient:null;
+$panel-header-font-size: 14px;
+$panel-header-font-weight: normal;
+.x-panel-header {		
+	height: 30px;
+}
+
+// framed panel
+$panel-frame-border-radius: 2px;
+$panel-frame-border-width: 1px;
+
+//grid
+$grid-header-color: black;
+$grid-header-background-color: #AAA;
+$grid-header-over-background-color: #BBB;
+$grid-header-background-gradient: 'glossy';
+$grid-header-over-background-gradient: 'recessed';
+
+$grid-row-cell-alt-background: #eee;
+$grid-row-cell-over-background-color: #ccc;
+$grid-row-cell-over-background-gradient: 'flat';
+$grid-row-cell-focus-background-gradient: 'flat';
+
+//window
+$window-base-color: $base-color;
+
+$window-border-radius: 5px 5px;
+$window-border-width: 0;
+
+$window-inner-border-width: 1px;
+$window-background-color: $color1;
+$window-header-background-color: null;
+
+$window-body-border-width: 1px;
+$window-body-border-style: solid;
+$window-body-border-color: $color1;
+$window-border-color: black;
+//$window-body-color: #000;
+
+$window-header-padding: 5px;
+$window-header-font-size: 14px;
+$window-header-color: #fff;
+$window-header-font-weight: normal;
+.x-window-header {
+	height:25px;
+}
+
+//buttons
+$button-small-border-radius: 2px;
+$button-medium-border-radius: 2px;
+$button-large-border-radius: 2px;
+$button-default-color: #fff;
+$button-default-base-color: #333;
+$button-default-base-color-over: #444;
+$button-default-base-color-pressed: #555;
+$button-default-background-gradient-over: 'glossy';
+$button-default-background-gradient-pressed: 'recessed';
+$button-default-border-color: #000;
+$button-default-border-color-over: #000;
+$button-default-border-color-focus: #000;
+$button-default-border-color-pressed: #000;
+$button-default-border-color-disabled: #555;
+
+$button-toolbar-color: #fff;
+$button-toolbar-border-color: #000;
+$button-toolbar-background-color: #333;
+
+$button-toolbar-border-color-pressed: #000;
+$button-toolbar-background-color-pressed: #555;
+$button-toolbar-border-color-over: #000;
+$button-toolbar-background-color-over: #444;
+$button-toolbar-background-gradient: 'glossy';
+$button-toolbar-background-gradient-over: 'glossy';
+$button-toolbar-background-gradient-focus: 'glossy';
+$button-toolbar-background-gradient-pressed: 'recessed';
+$button-toolbar-background-gradient-disabled: null;
+$button-toolbar-color-over: #fff;
+$button-toolbar-color-pressed: #fff;
+
+$btn-group-background-color: #333;
+$btn-group-border-color: black;
+$btn-group-header-color: #fff !default;
+$btn-group-header-background-color: #333;;
+
+//tabs
+$tabbar-base-color: rgba(150,150,150,0);
+$tab-spacing: 1px;
+$tab-height: 35px;
+
+$tab-base-color: #54565B;
+$tab-base-color-over: white;
+$tab-base-color-active: $color1;
+$tab-color-active: white;
+
+$tab-inner-border: true;
+$tabbar-border-color: black;
+$tab-border-color-active: black;
+$tab-border-color-over: black;
+
+$tabbar-strip-background-color: black;
+$tabbar-background-gradient: 'tab';
+$tabbar-top-body-border-width: 0;
+$tabbar-top-plain-body-border-width: 0;
+$tabbar-bottom-body-border-width: 0;
+$tabbar-bottom-plain-body-border-width: 0;
+
+$tab-spacing: 0px;
+
+//progress bar
+$progress-bar-background-color: rgba(125,171,22, 1);
+
+//fieldsets
+$fieldset-header-color: black;
+$fieldset-border-color: black;
+
+//datepicker
+$datepicker-header-background-color: $color2;
+$datepicker-header-background-gradient: 'glossy';
+$datepicker-today-item-background-color: #ccc;
+$datepicker-today-item-border-color: black;
+
+$datepicker-th-background-color: $color1;
+$datepicker-th-color: #888;
+$datepicker-th-border-bottom-color: $color2;
+$datepicker-item-color: #000;
+$datepicker-item-hover-background-color: #eee;
+$datepicker-selected-item-border-color: black;
+$datepicker-selected-item-background-color: #ccc;
+$datepicker-monthpicker-item-color: #fff;
+
+//layout
+$accordion-header-color: white;
+$accordion-header-background-color: $color1;
+
+// toolbar
+$toolbar-background-color: #EEE;
+$toolbar-background-gradient: null;
+$toolbar-inner-border-width: 1px;
+$toolbar-inner-border-color: $color1;
+$toolbar-border-color: null;
+
+$toolbar-separator-color: #E5E5E5;
+$toolbar-text-color: black;
+
+
+@import 'ext4/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include extjs-boundlist;
+@include extjs-button;
+@include extjs-btn-group;
+@include extjs-datepicker;
+@include extjs-colorpicker;
+@include extjs-menu;
+@include extjs-grid;
+@include extjs-form;
+    @include extjs-form-field;
+    @include extjs-form-fieldset;
+    @include extjs-form-file;
+    @include extjs-form-checkboxfield;
+    @include extjs-form-checkboxgroup;
+    @include extjs-form-triggerfield;
+    @include extjs-form-htmleditor;
+@include extjs-panel;
+@include extjs-qtip;
+@include extjs-slider;
+@include extjs-progress;
+@include extjs-toolbar;
+@include extjs-window;
+@include extjs-messagebox;
+@include extjs-tabbar;
+@include extjs-tab;
+@include extjs-tree;
+@include extjs-drawcomponent;
+@include extjs-viewport;
+
+// This line changes the location of your images when creating UIs to be relative instead of within the ExtJS directory.
+// You MUST set this to true/string value if you are creating new UIs + supporting legacy browsers.
+// This only applies to new UIs. It does not apply to default component images (i.e. when changing $base-color)
+// The value can either be true, in which case the image path will be "../images/"
+// or a string, of where the path is
+$relative-image-path-for-uis: true; // defaults to "../images/" when true
